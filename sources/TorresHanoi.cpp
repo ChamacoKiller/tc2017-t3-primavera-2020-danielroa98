@@ -12,7 +12,7 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
     
-    cout << "Torres de Hanoi funciona"
+    cout << "Torres de Hanoi funciona" << endl;
 
     return 0;
 }
