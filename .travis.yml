@@ -1,0 +1,8 @@
+compiler: gcc
+language: cpp
+script:
+    - cd sources
+    - g++ -o TH TorresHanoi.cpp -std=c++17
+    - ./TH
+    - g++ -o F Ferrocarril.cpp -std=c++17
+    - ./F
