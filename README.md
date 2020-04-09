@@ -36,11 +36,64 @@ El proyecto debe seguir la siguiente estructura de carpetas:
 
 ## 2. Solución
 
-*[Incluya aquí una explicación de la solución implementada]*
+Estos dos códigos se encargan de llevar a cabo diferentes funciones, uno se encarga de resolver el problema de las __Torres de Hanoi__ y el otro se encarga de resolver el problema de los ferrocarriles.
+
+La programación de estos dos fue llevada a cabo utilizando recursión para que pueda mandar a llamar los datos anteriores que se estaban utilizando. Como ejemplo, esto se puede ver en la línea _27_ del programa [Torres de Hanoi](sources/TorresHanoi.cpp) y en la línea _39_ del programa [Ferrocarril](sources/Ferrocarril.cpp).
+
+Para el programa de las __Torres de Hanoi__, lo que se intenta llevar a cabo es mover los platos (o discos) de la torre del principio hasta la última torre (la tercera). La meta es hacerlo con el menor número de movimientos para poder llevar a cabo. Hay diferentes versiones de este problema, pero la mas conocida/popular es la versión en la que se manejan 3 platos. Este problema se debe resolver en __7__ movimientos. La complejidad _O_ de este algoritmo es de: .
+
+Para el programa de los horarios de un ferrocarril, se plantea que se debe buscar la ruta mas rápida para llegar a una parada. En el libro llamado __Técnicas de Diseño de Algoritmos__, se menciona que para poder solucionar esto, se puede programar una variante del algoritmo de Dijkstra, en el cual, se toma en cuenta el peso que se tiene entre las conexiones de cada nodo y, por ende, se toma en cuenta como si fuese el tiempo que le toma en llegar a cada una de las estaciones. Al ingresar al código, en el main se va a ver una tabla como la siguiente:  
+
+![Tiempo entre paradas](examples/TablaParadas.png)
+
+Esos valores numéricos representan los tiempos que se encuentran entre las paradas correspondientes entre cada una de las paradas. La complejidad _O_ de este algoritmo es de: .
 
 ### 2.1 Pasos a seguir para utilizar la aplicación
 
 *[Incluya aquí una guía paso a paso para poder utilizar la aplicación, desde la clonación del repositorio, la compilación del código hasta la ejecución de los ejemplos para visualizar los resultados.]*
+
+Para poder correr estos programas, se deben de tener los siguientes programas instalados:
+
+* Git
+* gcc
+
+De tal manera, para poder tener el repositorio deseado, es necesario correr el siguiente comando:
+
+```
+git clone https://github.com/tec-csf/tc2017-t3-primavera-2020-danielroa98.git
+```
+
+Después puede ingresar a la carpeta del repositorio llamada _tc2017-t3-primavera-2020-danielroa98_ usando el siguiente comando:
+```
+cd tc2017-t3-primavera-2020-danielroa98
+```
+
+A continuación podrá encontrar la instrucciones correspondientes para el programa deseado.
+
+### 2.2 Torres de Hanoi
+Para poder comenzar a correr el programa que contiene la solución de las __Torres de Hanoi__ es necesario ingresar a la carpeta llamada [sources](/sources) usando el siguiente comando en su terminal.
+
+```
+cd sources
+```
+
+Una vez que se encuentre dentro, podrá comenzar a correr el código al usar los siguientes comandos:
+```
+g++ -o TH TorresHanoi.cpp -std=c++17
+./TH 
+```
+
+* El primero de estos comandos se encarga de compilar el programa, de tal manera el usuario podrá confirmar que la versión que se está corriendo es la mas reciente.
+* El segundo comando es el que corre el programa.
+
+A continuación, en la terminal se debería de desplegar la información respecto la cantidad de movimientos que se llevaron a cabo y la cantidad de movimiento que realizó.
+
+La complejidad __O__ de este algoritmo es equivalente a: O().
+
+* __NOTA__
+
+    * Para que el programa pueda correr en la plataforma de [__Travis-CI__](https://travis-ci.com/github/tec-csf/tc2017-t3-primavera-2020-danielroa98) se dejo preprogramado con **3** discos por default.
+    * Para que el programa de los _Ferrocarriles_ funcionara en [__Travis-CI__](https://travis-ci.com/github/tec-csf/tc2017-t3-primavera-2020-danielroa98) se dejarón preprogamados los valores del tiempo en en el arreglo llamado _horarios_.
 
 ## 3. Referencias
 
