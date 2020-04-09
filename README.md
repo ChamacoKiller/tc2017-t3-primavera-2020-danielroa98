@@ -82,18 +82,35 @@ Una vez que se encuentre dentro, podrá comenzar a correr el código al usar los
 g++ -o TH TorresHanoi.cpp -std=c++17
 ./TH 
 ```
-
-* El primero de estos comandos se encarga de compilar el programa, de tal manera el usuario podrá confirmar que la versión que se está corriendo es la mas reciente.
-* El segundo comando es el que corre el programa.
+* Respecto los comandos..
+    * El primero de estos comandos se encarga de compilar el programa, de tal manera el usuario podrá confirmar que la versión que se está corriendo es la mas reciente.
+    * El segundo comando es el que corre el programa.
 
 A continuación, en la terminal se debería de desplegar la información respecto la cantidad de movimientos que se llevaron a cabo y la cantidad de movimiento que realizó.
 
-La complejidad __O__ de este algoritmo es equivalente a: O().
+### 2.3 Ferrocarril
+Para poder comenzar a correr el programa que maneja la solución del __Ferrocarril__, es necesario ingresar a la carpeta llamada [sources](/sources) usando el siguiente comando en la terminal.
+```
+cd sources
+```
 
-* __NOTA__
+Una vez que se encuentre dentro, podrá comenzar a correr el código al usar los siguientes comandos:
+```
+g++ -o F Ferrocarril.cpp -std=c++17
+./F
+```
+* Respecto los comandos..
+    * El primero de estos comandos se encarga de compilar el programa, de tal manera el usuario podrá confirmar que la versión que se está corriendo es la mas reciente.
+    * El segundo comando es el que corre el programa.
 
-    * Para que el programa pueda correr en la plataforma de [__Travis-CI__](https://travis-ci.com/github/tec-csf/tc2017-t3-primavera-2020-danielroa98) se dejo preprogramado con **3** discos por default.
-    * Para que el programa de los _Ferrocarriles_ funcionara en [__Travis-CI__](https://travis-ci.com/github/tec-csf/tc2017-t3-primavera-2020-danielroa98) se dejarón preprogamados los valores del tiempo en en el arreglo llamado _horarios_.
+
+Después de haber insertado el comando para correrlo, debería de desplegar las paradas que puede llevar a cabo, los tiempos y las paradas que tiene que recorrer, como se puede ver a continuación.
+
+![Tiempos entre paradas](examples/Tiempos.png)
+
+### 2.4 __NOTAS__
+* Para que el programa pueda correr en la plataforma de [__Travis-CI__](https://travis-ci.com/github/tec-csf/tc2017-t3-primavera-2020-danielroa98) se dejo preprogramado con **3** discos por default.
+* Para que el programa de los _Ferrocarriles_ funcionara en [__Travis-CI__](https://travis-ci.com/github/tec-csf/tc2017-t3-primavera-2020-danielroa98) se dejarón preprogamados los valores del tiempo en en el arreglo llamado _horarios_.
 
 ## 3. Referencias
 
