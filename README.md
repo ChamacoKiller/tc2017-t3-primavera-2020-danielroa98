@@ -114,4 +114,4 @@ Después de haber insertado el comando para correrlo, debería de desplegar las 
 
 ## 3. Referencias
 
-*[Incluya aquí las referencias a sitios de interés y cualquier otra información que haya utilizado para realizar la actividad y que le puedan ser de utilidad a otras personas que quieran usarlo como referencia]*
+1. Guerequeta , R., & Vallecillo, A. (2000). Técnicas de Diseño de Algoritmos (2nda ed., Vol. 1). Málaga: Servicio de Publicaciones de la Universidad de Málaga.
