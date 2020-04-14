@@ -111,6 +111,7 @@ Después de haber insertado el comando para correrlo, debería de desplegar las 
 ### 2.4 __NOTAS__
 * Para que el programa pueda correr en la plataforma de [__Travis-CI__](https://travis-ci.com/github/tec-csf/tc2017-t3-primavera-2020-danielroa98) se dejo preprogramado con **3** discos por default.
 * Para que el programa de los _Ferrocarriles_ funcionara en [__Travis-CI__](https://travis-ci.com/github/tec-csf/tc2017-t3-primavera-2020-danielroa98) se dejarón preprogamados los valores del tiempo en en el arreglo llamado _horarios_.
+* Las imágenes se pueden ver en la carpeta de [examples](examples), debido a que no se tuvieron que ingresar documentos documentos a ninguno de los programas.
 
 ## 3. Referencias
 
