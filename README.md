@@ -40,13 +40,13 @@ Estos dos códigos se encargan de llevar a cabo diferentes funciones, uno se enc
 
 La programación de estos dos fue llevada a cabo utilizando recursión para que pueda mandar a llamar los datos anteriores que se estaban utilizando. Como ejemplo, esto se puede ver en la línea _27_ del programa [Torres de Hanoi](sources/TorresHanoi.cpp) y en la línea _39_ del programa [Ferrocarril](sources/Ferrocarril.cpp).
 
-Para el programa de las __Torres de Hanoi__, lo que se intenta llevar a cabo es mover los platos (o discos) de la torre del principio hasta la última torre (la tercera). La meta es hacerlo con el menor número de movimientos para poder llevar a cabo. Hay diferentes versiones de este problema, pero la mas conocida/popular es la versión en la que se manejan 3 platos. Este problema se debe resolver en __7__ movimientos. La complejidad _O_ de este algoritmo es de: .
+Para el programa de las __Torres de Hanoi__, lo que se intenta llevar a cabo es mover los platos (o discos) de la torre del principio hasta la última torre (la tercera). La meta es hacerlo con el menor número de movimientos para poder llevar a cabo. Hay diferentes versiones de este problema, pero la mas conocida/popular es la versión en la que se manejan 3 platos. Este problema se debe resolver en __7__ movimientos. La complejidad _O_ de este algoritmo es de: __O(2<sup>n</sup>)__.
 
 Para el programa de los horarios de un ferrocarril, se plantea que se debe buscar la ruta mas rápida para llegar a una parada. En el libro llamado __Técnicas de Diseño de Algoritmos__, se menciona que para poder solucionar esto, se puede programar una variante del algoritmo de Dijkstra, en el cual, se toma en cuenta el peso que se tiene entre las conexiones de cada nodo y, por ende, se toma en cuenta como si fuese el tiempo que le toma en llegar a cada una de las estaciones. Al ingresar al código, en el main se va a ver una tabla como la siguiente:  
 
 ![Tiempo entre paradas](examples/TablaParadas.png)
 
-Esos valores numéricos representan los tiempos que se encuentran entre las paradas correspondientes entre cada una de las paradas. La complejidad _O_ de este algoritmo es de: .
+Esos valores numéricos representan los tiempos que se encuentran entre las paradas correspondientes entre cada una de las paradas. La complejidad _O_ de este algoritmo es de: __O( |V| + |E|logV)__.
 
 ### 2.1 Pasos a seguir para utilizar la aplicación
 
