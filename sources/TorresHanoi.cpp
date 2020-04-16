@@ -12,6 +12,15 @@
 using namespace std;
 using namespace std::chrono;
 
+/*
+ * torresHanoi is tasked with solving (recursively) the Hanoi Towers problem
+ * @param int noPlato is the amount of discs that will be moved
+ * @param base1 is the name of the first tower/base
+ * @param base2 is the name of the second tower/base
+ * @param base3 is the name of the third tower base
+ * @torresHanoi sends data recursively to the method
+ * @return nothing
+*/
 void torresHanoi(int noPlato, char base1, char base2, char base3){
 
     if (noPlato == 1)
@@ -29,20 +38,13 @@ void torresHanoi(int noPlato, char base1, char base2, char base3){
 
 int main(int argc, char const *argv[])
 {
-    int noPlato = 3, poT;    //El número por default es 3, pero el programa permite que se inserten mas platos.
+    int noPlato = 3, poT;    
     char base1 = '1', base2 = '2', base3 = '3';
 
     cout << "\nEl orden de las bases es el siguiente:\n";
 
     cout << " |     |     | \n_|_____|_____|_" << endl;
     cout << "_1_____2_____3_\n" << endl;
-
-    /*
-    //Estas lineas será comentada para que el programa pueda ser ejecutado en Travis
-    cout << "Inserte el número de platos que se van a mover." << endl;
-    cin >> noPlato;
-    cout << "\n";
-    */
 
     poT = pow(2, noPlato);
 

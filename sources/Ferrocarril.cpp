@@ -11,8 +11,13 @@
 using namespace std;
 using namespace std::chrono;
 
-#define E 9     //Estaciones dentro de la red del ferrocarril
+#define E 9     //amount of stations found in the rail system
 
+/*
+ *  Tiempos is tasked with finding the fastest amount of time of going between stations
+ * @param int tiempo[] allocates/holds the fastest route available
+ * @param bool enRuta[], this boolean will become true if the stop (E) is located in the current route
+ */
 int Tiempos(int tiempo[], bool enRuta[]){
 
     int menor = INT_MAX, min_index;
@@ -29,6 +34,11 @@ int Tiempos(int tiempo[], bool enRuta[]){
     return min_index;
 }
 
+/*
+ * Camino is tasked with printing the overall route it will be following
+ * @param int principal[] array were the shortest amount of time (in general) is being stored.
+ * @param int i counter that allocates the station number
+ */
 void Camino(int principal[], int i){
     
     if (principal[i] == -1)
@@ -41,6 +51,12 @@ void Camino(int principal[], int i){
     printf("%d ", i);
 }
 
+/*
+ * imprimeRuta is tasked in printing the point the train's heading, the route amd the total amount of time.
+ * @param int tiempo[] allocates/holds the fastest route available
+ * @param int n holds the amount of stations (E) available.
+ * @param int principal[] array were the shortest amount of time (in general) is being stored.
+ */
 int imprimeRuta(int tiempo[], int n, int principal[]){
     int origen = 0;
 
@@ -56,6 +72,12 @@ int imprimeRuta(int tiempo[], int n, int principal[]){
     }
 }
 
+/*
+ * Ferrocarril is tasked in running the functions to analyze and check the fastest route from point A to point B
+ * @param int horarios holds the array with the times between each stop.
+ * @param int partida is holding the main departure point
+ * @imprimeRuta sends the variables to the method of the same name
+ */
 void Ferrocarril(int horarios[E][E], int partida){
 
     int tiempo[E];
